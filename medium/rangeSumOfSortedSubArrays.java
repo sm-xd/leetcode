@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
 class Solution {
     final int MOD = 1000000007;
     public int rangeSum(int[] nums, int n, int left, int right) {
