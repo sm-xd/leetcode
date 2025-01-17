@@ -4,13 +4,13 @@ public class MinimumLengthofStringAfterOperations {
     public static int minimumLength(String s) {
         int[] freq = new int[26];
 
-        for (int i = 0; i < s.length(); i++) {
+        for(int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             freq[c - 'a']++;
         }
 
         int sum = 0;
-        for (int count : freq) {
+        for(int count : freq) {
             if (count > 0) {
                 sum += (count % 2 == 0) ? 2 : 1;
             }
